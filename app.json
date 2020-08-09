@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "themehooks",
+    "slug": "snack-6b24c427-1ab5-4ab9-add2-0859a866c1a1",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "https://medium.com/uninow-engineering/build-a-react-native-theme-provider-using-hooks-2c303107109d"
+  }
+}

@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator, Button } from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 import { Feather } from '@expo/vector-icons';
 
 import { MainScreen, SettingsScreen } from './screens';
-import { theme } from './theme/themeProvider';
+import { theme, ThemeContextProvider} from './theme/themeProvider';
 
 const Tab = createBottomTabNavigator();
 const customTabBarStyle = {
@@ -69,8 +70,10 @@ const MyTabs = () => {
 
 export default () => {
   return (
+    <ThemeContextProvider>
     <NavigationContainer>
       <MyTabs />
     </NavigationContainer>
+    </ThemeContextProvider>
   );
 }

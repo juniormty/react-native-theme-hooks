@@ -1,44 +1,45 @@
 import React from 'react';
-import { 
+import {
   View,
   Text,
   StyleSheet,
   FlatList,
   TouchableOpacity,
 } from 'react-native';
- 
-import { themes, theme } from '../theme/themeProvider';
 
-const SettingScreen = () => {
-  renderItem = ({ item }) => (
-    <TouchableOpacity>
-      <View
-        style={[
-          style.itemContainer,
-          {
-            backgroundColor: item.backgroundColor,
-          },
-        ]}
-      >
-        <Text style={[style.itemText, { color: item.color }]}>{item.key}</Text>
-      </View>
-    </TouchableOpacity>
-  );
+import { withTheme } from '../theme/themeProvider';
 
-  return (
-    <FlatList
-      style={style.container}
-      ListHeaderComponent={
-        <Text style={[style.headline, { color: theme.backgroundColor }]}>
-          Choose your theme:
+export default withTheme(
+  ({ theme, themes, setTheme }) => {
+    renderItem = ({ item }) => (
+      <TouchableOpacity onPress={() => setTheme(item.key)}>
+        <View
+          style={[
+            style.itemContainer,
+            {
+              backgroundColor: item.backgroundColor,
+            },
+          ]}
+        >
+          <Text style={[style.itemText, { color: item.color }]}>{item.key}</Text>
+        </View>
+      </TouchableOpacity>
+    );
+
+    return (
+      <FlatList
+        style={style.container}
+        ListHeaderComponent={
+          <Text style={[style.headline, { color: theme.backgroundColor }]}>
+            Choose your theme:
         </Text>
-      }
-      data={themes}
-      renderItem={renderItem}
-    />
-  );
-};
-export default SettingScreen;
+        }
+        data={themes}
+        renderItem={renderItem}
+      />
+    );
+  }
+);
 
 const style = StyleSheet.create({
   container: { flex: 1 },

@@ -1,14 +1,18 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
+import { withTheme } from '../theme/themeProvider';
 
-export default () => {
-  return (
-    <View style={style.container}>
-      <Text style={style.text}>MAIN PART</Text>
-    </View>
-  );
-};
+
+export default withTheme(
+  ({ theme }) => {
+    return (
+      <View style={[style.container, { backgroundColor: theme.backgroundColor }]}>
+        <Text style={[style.text, { color: theme.color }]}>MAIN PART</Text>
+      </View>
+    );
+  }
+);
 
 const style = StyleSheet.create({
   container: {

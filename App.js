@@ -13,7 +13,6 @@ const MyTabs = withTheme(
   ({ theme }) => {
     const customTabBarStyle = {
       activeTintColor: theme.backgroundColor,
-      inactiveTintColor: 'gray',
       allowFontScaling: true,
       labelStyle: {
         fontSize: 20
@@ -24,23 +23,6 @@ const MyTabs = withTheme(
     return (
       <Tab.Navigator
         tabBarOptions={customTabBarStyle}
-
-      /*    screenOptions={({ route }) => ({
-            tabBarIcon: ({ color, size }) => {
-              const icons = {
-                Home: 'home',
-                Settings: 'settings',
-              };
-    
-              return (
-                <Feather
-                  name={icons[route.name]}
-                  color={color}
-                  size={size}
-                />
-              );
-            },
-          })}*/
       >
         <Tab.Screen
           name="Home"
@@ -51,7 +33,7 @@ const MyTabs = withTheme(
               <Feather
                 name="home"
                 focused={focused}
-                color={focused ? theme.backgroundColor : 'gray'}
+                color={color}
                 size={size} />
             ),
           }}
@@ -64,7 +46,7 @@ const MyTabs = withTheme(
               <Feather
                 name="settings"
                 focused={focused}
-                color={focused ? theme.backgroundColor : 'gray'}
+                color={color}
                 size={size} />
             ),
           }}

@@ -8,18 +8,19 @@ import { MainScreen, SettingsScreen } from './screens';
 import { withTheme, ThemeContextProvider } from './theme/themeProvider';
 
 const Tab = createBottomTabNavigator();
-const customTabBarStyle = withTheme(
+
+const MyTabs = withTheme(
   ({ theme }) => {
-    return {
+    const customTabBarStyle = {
       activeTintColor: theme.backgroundColor,
       inactiveTintColor: 'gray',
       allowFontScaling: true,
+      labelStyle: {
+        fontSize: 20
+      },
       tabStyle: { paddingTop: 5 },
       style: { height: 60, borderTopColor: theme.color },
     }
-  })
-const MyTabs = withTheme(
-  ({ theme }) => {
     return (
       <Tab.Navigator
         tabBarOptions={customTabBarStyle}

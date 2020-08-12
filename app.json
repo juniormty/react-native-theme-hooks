@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "themehooks",
-    "slug": "snack-6b24c427-1ab5-4ab9-add2-0859a866c1a1",
+    "name": "BottomTabNavigator Theme Hooks",
+    "slug": "bottomtabnavigator-with-theme",
     "version": "1.0.0",
+    "sdkVersion": "38.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -22,6 +23,9 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "https://medium.com/uninow-engineering/build-a-react-native-theme-provider-using-hooks-2c303107109d"
+    "description": "https://medium.com/uninow-engineering/build-a-react-native-theme-provider-using-hooks-2c303107109d",
+    "android": {
+      "package": "net.sytes.myblog"
+    }
   }
 }

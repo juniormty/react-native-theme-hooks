@@ -18,5 +18,85 @@
       "key": "BRIGHT YELLOW (CRAYOLA)",
       "backgroundColor": "#FF9F1C",
       "color": "#1F2D3D"
+    },
+    {
+      "key": "INDIANRED",
+      "backgroundColor": "#CD5C5C",
+      "color": "#ffffff"
+    },
+    {
+      "key": "PINK",
+      "backgroundColor": "#FFC0CB",
+      "color": "#ffffff"
+    },
+    {
+      "key": "INDIGO",
+      "backgroundColor": "#4B0082",
+      "color": "#ffffff"
+    },
+    {
+      "key": "CHARTREUSE",
+      "backgroundColor": "#7FFF00",
+      "color": "#1F2D3D"
+    },
+    {
+      "key": "LIGHTPINK",
+      "backgroundColor": "#FFB6C1",
+      "color": "#1F2D3D"
+    },
+    {
+      "key": "SALMON",
+      "backgroundColor": "#FA8072",
+      "color": "#ffffff"
+    },
+    {
+      "key": "OLIVE",
+      "backgroundColor": "#808000",
+      "color": "#ffffff"
+    },
+    {
+      "key": "DARKSALMON",
+      "backgroundColor": "#E9967A",
+      "color": "#1F2D3D"
+    },
+    {
+      "key": "ROYALBLUE",
+      "backgroundColor": "#4169E1",
+      "color": "#ffffff"
+    },
+    {
+      "key": "SANDYBROWN",
+      "backgroundColor": "#F4A460",
+      "color": "#1F2D3D"
+    },
+    {
+      "key": "CRIMSON",
+      "backgroundColor": "#DC143C",
+      "color": "#ffffff"
+    },
+    {
+      "key": "RED",
+      "backgroundColor": "#FF0000",
+      "color": "#ffffff"
+    },
+    {
+      "key": "MEDIUMBLUE",
+      "backgroundColor": "#0000CD",
+      "color": "#ffffff"
+    },
+    {
+      "key": "FIREBRICK",
+      "backgroundColor": "#B22222",
+      "color": "#ffffff"
+    },
+    {
+      "key": "TURQUOISE",
+      "backgroundColor": "#40E0D0",
+      "color": "#ffffff"
+    },
+    {
+      "key": "DARKRED",
+      "backgroundColor": "#8B0000",
+      "color": "#ffffff"
     }
   ]
